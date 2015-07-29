@@ -64,7 +64,10 @@ describe('Visual monitor testing', function() {
         exclude: [
           '.price-tag'
         ],
-        remove: [],
+        remove: [
+            '#habla_window_div',
+            '#habla_beta_container_do_not_rely_on_div_classes_or_names'
+        ],
         // screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
       }, shoovWebdrivercss.processResults)
       .call(done);
