@@ -62,13 +62,13 @@ describe('Visual monitor testing', function() {
       .webdrivercss(testName + '.pricing', {
         name: '1',
         exclude: [
-          '.price-tag'
+          '.price-tag',
+          '#pricing-currency'
         ],
         remove: [
-            '#habla_window_div',
-            '#habla_beta_container_do_not_rely_on_div_classes_or_names'
-        ],
-        // screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
+          '#habla_window_div',
+          '#habla_beta_container_do_not_rely_on_div_classes_or_names'
+        ]
       }, shoovWebdrivercss.processResults)
       .call(done);
   });
